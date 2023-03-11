@@ -23,12 +23,5 @@ public class LoginPageSteps implements En {
             loginPage.submit();
         });
 
-
-//    Given("Login to existing account", () -> {
-//        loginPage = page(LoginPage.class);
-//        loginPage.formIsShown().shouldHave(text("Deine Anmeldedaten"));
-//        loginPage.validAuth();
-//        loginPage.submit();
-//    });
     }
 }
