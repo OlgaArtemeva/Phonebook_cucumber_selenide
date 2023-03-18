@@ -17,6 +17,9 @@ public class HomePage {
     public void goToMeinKonto() {
         $(meinKontoIcon).click();
         $(anmeldenButton).click();
+//        $(selector) возвращает элемент
+//        $$(selector) возвращает массив элементов
+//        $$("#search-results a").findBy(text("selenide.org")).click();
     }
     public SelenideElement verifyAuthIcon() {
         return $(loggedInIcon);

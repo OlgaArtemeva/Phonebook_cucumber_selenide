@@ -11,3 +11,5 @@ Feature: login and auth,
     And we select the button zum Warenkorb
     Then basket page is loaded
     And product in basket
+#    Then deleted a product from basket and logout
+

@@ -13,6 +13,9 @@ import static com.codeborne.selenide.Selenide.page;
 
 public class DamenPageSteps implements En {
     DamenPage damenPage;
+    public String a;
+
+
 
     public DamenPageSteps() {
         Then("wir see a damen page", () -> {
@@ -22,6 +25,7 @@ public class DamenPageSteps implements En {
 
         When("we select the first product from the category \"Empfehlungen für dich\"", () -> {
             damenPage.productName = damenPage.switchTo().getText();
+            a = damenPage.productName;
             damenPage.goToProduct();
         });
 
@@ -29,7 +33,7 @@ public class DamenPageSteps implements En {
             damenPage.verifyProductName().shouldBe(Condition.visible);
         });
 
-        When("we enter on the button In den Warenkorb" , () -> {
+        When("we enter on the button In den Warenkorb", () -> {
             damenPage.addToBasket();
 
         });

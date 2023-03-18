@@ -15,12 +15,11 @@ public class DamenPage {
 //    product - первый в списке из категории "Empfehlungen für dich"
     private static By product = By.xpath("//h2[contains(text(),'Empfehlungen für dich')]/following-sibling::div/ul/li[1]/a/div[2]/div[2]");
    public String productName;
-    private static By elementProductName = By.xpath("//h1[contains(text(),productName)]");
+//    private static By elementProductName = By.xpath("//h1[contains(text()," + productName + ")]");
+    private static By elementProductName = By.xpath("//h1[contains(text(), productName)]");
 
     private static By inDenWarenkorb = By.cssSelector("[data-qa='addToBasket']");
-//    private static By zumWarenkorb = By.cssSelector("[data-qa='goToBasket']");
-//    private static By zumWarenkorb = By.xpath("//*[@id='p_layer__wrapper_0']/div/div/div/div[1]/div[2]/a");
-    private static By zumWarenkorb = By.xpath("//*[@id=\"p_layer__wrapper_0\"]/div/div/div/div[3]/div[4]/div[2]/a");
+    private static By zumWarenkorb = By.xpath("//*[@id='p_layer__wrapper_0']/div/div/div/div[3]/div[4]/div[2]/a");
     public SelenideElement verifyDamenPage() {
         return $(formHeader);
     }
