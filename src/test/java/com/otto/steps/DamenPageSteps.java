@@ -2,19 +2,12 @@ package com.otto.steps;
 
 import com.codeborne.selenide.Condition;
 import com.otto.pages.DamenPage;
-import com.otto.pages.LoginPage;
 import io.cucumber.java8.En;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import javax.swing.*;
-
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.page;
 
 public class DamenPageSteps implements En {
     DamenPage damenPage;
-    public String a;
-
 
 
     public DamenPageSteps() {
@@ -25,7 +18,6 @@ public class DamenPageSteps implements En {
 
         When("we select the first product from the category \"Empfehlungen für dich\"", () -> {
             damenPage.productName = damenPage.switchTo().getText();
-            a = damenPage.productName;
             damenPage.goToProduct();
         });
 
@@ -39,7 +31,6 @@ public class DamenPageSteps implements En {
         });
 
         And("we select the button zum Warenkorb", () -> {
-
             damenPage.goToBasket();
         });
 

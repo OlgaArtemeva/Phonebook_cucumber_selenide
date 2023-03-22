@@ -3,9 +3,7 @@ package com.otto.pages;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-import javax.swing.*;
 
 import static com.codeborne.selenide.Selenide.$;
 
@@ -14,8 +12,7 @@ public class DamenPage {
     private static By formHeader = By.cssSelector("#reptile-breadcrumb > div > div.nav_grimm-breadcrumb-container__title > div > div.nav_grimm-breadcrumb-headline__text-group > h1");
 //    product - первый в списке из категории "Empfehlungen für dich"
     private static By product = By.xpath("//h2[contains(text(),'Empfehlungen für dich')]/following-sibling::div/ul/li[1]/a/div[2]/div[2]");
-   public String productName;
-//    private static By elementProductName = By.xpath("//h1[contains(text()," + productName + ")]");
+   public static String productName;
     private static By elementProductName = By.xpath("//h1[contains(text(), productName)]");
 
     private static By inDenWarenkorb = By.cssSelector("[data-qa='addToBasket']");

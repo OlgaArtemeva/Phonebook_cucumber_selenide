@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fd94d8b-79cd-4583-8e69-507fcf8185f4" name="Changes" comment="second commit">
+    <list default="true" id="9fd94d8b-79cd-4583-8e69-507fcf8185f4" name="Changes" comment="third commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/?/1678545016936.0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/?/1678545346598.0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/otto/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/otto/RunCucumberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/otto/pages/BasketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/otto/pages/BasketPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/otto/pages/DamenPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/otto/pages/DamenPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/otto/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/otto/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/otto/steps/BasketPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/otto/steps/BasketPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/otto/steps/DamenPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/otto/steps/DamenPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature!" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/otto/steps/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/otto/steps/HomePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature!" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/productToBasket.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/productToBasket.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,8 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunCucumberTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="otto_cucumber_selenide" />
+    <configuration name="RunCucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Phonebook_cucumber_selenide" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.otto.*" />
@@ -93,7 +97,7 @@
       </method>
     </configuration>
     <configuration name="RunCucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Phonebook_cucumber_selenide" />
+      <module name="otto_cucumber_selenide" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.otto.*" />
@@ -153,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678562741669</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="third commit">
+      <created>1679167607650</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679167607651</updated>
+    </task>
+    <task id="LOCAL-00004" summary="third commit">
+      <created>1679168073233</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679168073233</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,18 +188,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/otto/steps/DamenPageSteps.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="damenPage.productName" language="JAVA" />

@@ -2,7 +2,6 @@ package com.otto.steps;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebDriverRunner;
-import com.otto.pages.DamenPage;
 import com.otto.pages.HomePage;
 import com.otto.pages.LoginPage;
 import io.cucumber.java8.En;
@@ -10,11 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import javax.annotation.meta.When;
-
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.page;
+import static com.codeborne.selenide.Selenide.*;
 
 public class HomePageSteps implements En {
     WebDriver driver;
@@ -67,5 +63,9 @@ public class HomePageSteps implements En {
             homePage.goToDamenCategory();
         });
 
+        And ("we close the driver", () -> {
+            clearBrowserCookies();
+            driver.quit();
+        });
     }
 }

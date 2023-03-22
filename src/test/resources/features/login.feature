@@ -10,4 +10,5 @@ Feature: login and auth
     When we enter valid creds of existing user
     And we submit this form
     Then user icon shows that we're logged in
+    And we close the driver
 
